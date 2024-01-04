@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="components/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Registration Screen</title>
+</head>
+<body>
+      <main>
+            <div class="background">
+                  <img class="registration-screen-background" src="components/images/undraw_Online_test_re_kyfx.png" alt="Registration background">
+            </div>
+            <div class="registration-screen-form">
+                  <div class="registration-sreen-header">
+                      <h1 class="registration-screen-title">Cadastre-se</h1>
+                        <div>
+                              <input class="button-enter" type="submit" value="Entrar">
+                        </div>
+                  </div>
+                  <div class="registration-screen-container">
+                        <form action="cadastro.php" method="post" autocomplete="on">
+                              <fieldset class="registration-screen-fieldset">
+                                        <div class="campo-firt-name">
+                                              <label class="registration-screen-label" for="firt-name">Primeiro Nome</label>
+                                              <input class="registration-screen-input" type="text" name="firt-name" id="firt-name" minlength="3" maxlength="15" autocomplete="username" placeholder="Digite seu primeiro nome">
+                                        </div>
+                                        <div class="campo-surname">
+                                              <label class="registration-screen-label" for="surname">Sobrenome</label>
+                                              <input class="registration-screen-input" type="text" name="surname" id="surname" minlength="3" maxlength="15" autocomplete="username" placeholder="Digite seu sobrenome">
+                                        </div>
+                              </fieldset>
+                              <fieldset class="registration-screen-fieldset">
+                                        <div class="campo-email">
+                                              <label class="registration-screen-label" for="email">E-mail</label>
+                                              <input class="registration-screen-input" type="email" name="email" id="email" minlength="8" autocomplete="email" placeholder="Digite seu E-mail">
+                                        </div>
+                                        <div class="campo-cellnumber">
+                                              <label class="registration-screen-label" for="cellnumber">Celular</label>
+                                              <input class="registration-screen-input" type="tel" name="cellnumber" id="cellnumber" minlength="8" autocomplete="tel" placeholder="[XX] XXXX-XXXX">
+                                        </div>
+                              </fieldset>
+                              <fieldset class="registration-screen-fieldset">
+                                        <div class="campo-password">
+                                              <label class="registration-screen-label" for="password">Senha</label>
+                                              <input class="registration-screen-input" type="password" name="password" id="password" minlength="5" maxlength="15" placeholder="Digite sua senha">
+                                        </div>
+                                        <div class="campo-confirm-password">
+                                              <label class="registration-screen-label" for="confirm-password">Confirme sua senha</label>
+                                              <input class="registration-screen-input" type="password" name="confirm-password" id="confirm-password" minlength="5" maxlength="15" placeholder="Digite sua senha novamente">
+                                        </div>
+                              </fieldset>
+                              <div class="campo-gender">
+                                    <div>
+                                        <input type="radio" name="gender" id="female" value="F" checked>
+                                        <label class="registration-screen-label" for="female">Feminino</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="gender" id="masculine" value="M">
+                                        <label class="registration-screen-label" for="masculine">Masculino</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="gender" id="outher" value="outher">
+                                        <label class="registration-screen-label" for="outher">Outros</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="gender" id="dont-say" value="dont-say">
+                                        <label class="registration-screen-label" for="dont-say">Prefiro não dizer</label>
+                                    </div>
+                              </div>
+                              <div class="button-continue">
+                                    <input type="submit" value="Continuar">
+                              </div>
+                        </form>
+                  </div>
+            </div>
+      </main>
+</body>
+</html>
